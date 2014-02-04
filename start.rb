@@ -5,7 +5,6 @@ require "optparse"
 require_relative 'tinypng_api'
 
 options = {}
-path = 'img'
 
 optparse = OptionParser.new do |opts|
   opts.banner = "Command-line tool for shrink images by https://www.tinypng.com.\n"
