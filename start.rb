@@ -32,4 +32,9 @@ if options.empty?
 end
 
 tiny = TinypngApi.new 'your api key'
+
+t1 = Time.now
 tiny.shrink_png options
+t2 = (Time.now - t1).round(2).to_s
+
+puts "Shrink image at #{t2} sec"
